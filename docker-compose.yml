@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: hibai-pg
+    environment:
+      POSTGRES_DB: hibai
+      POSTGRES_USER: hibai
+      POSTGRES_PASSWORD: hibai
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hibai -d hibai"]
+      interval: 5s
+      timeout: 3s
+      retries: 30

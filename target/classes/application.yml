@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hibai
+    username: hibai
+    password: hibai
+  jpa:
+    hibernate:
+      ddl-auto: update # for dev; use validate in prod
+    properties:
+      hibernate.jdbc.time_zone: UTC
+      hibernate.format_sql: true
+  sql:
+    init:
+      mode: never
+  flyway:
+    enabled: true
+server:
+  port: 8080
+
+hibai:
+  embeddings:
+    provider: ollama # set to 'openai' to use OpenAI embeddings
+    model: nomic-embed-text
+    ollama:
+      base-url: http://localhost:11434
+    openai:
+      base-url: https://api.openai.com/v1
+      api-key: ${OPENAI_API_KEY:}

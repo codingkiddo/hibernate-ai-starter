@@ -1,0 +1,11 @@
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/web/ProductController.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/ai/OllamaEmbeddingClient.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/vector/VectorDao.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/ai/EmbeddingConfig.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/ai/OpenAIEmbeddingClient.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/HibAiApplication.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/ai/EmbeddingClient.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/domain/Product.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/repo/ProductRepository.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/vector/PgVectorConfig.java
+/Users/vinodkumar/Documents/Technologies/Hibernate/hibernate-ai-starter/src/main/java/com/codingkiddo/hibai/service/ProductService.java
