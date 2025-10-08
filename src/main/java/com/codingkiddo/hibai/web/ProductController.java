@@ -3,17 +3,18 @@ package com.codingkiddo.hibai.web;
 import com.codingkiddo.hibai.domain.Product;
 import com.codingkiddo.hibai.service.ProductService;
 import jakarta.validation.Valid;
+import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
     private final ProductService service;
 
-    public ProductController(ProductService service) { this.service = service; }
+    public ProductController(ProductService service) {
+        this.service = service;
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

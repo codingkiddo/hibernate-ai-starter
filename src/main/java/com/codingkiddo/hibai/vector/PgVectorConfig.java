@@ -2,10 +2,9 @@ package com.codingkiddo.hibai.vector;
 
 import com.pgvector.PGvector;
 import jakarta.annotation.PostConstruct;
-import org.springframework.context.annotation.Configuration;
-
-import javax.sql.DataSource;
 import java.sql.Connection;
+import javax.sql.DataSource;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class PgVectorConfig {

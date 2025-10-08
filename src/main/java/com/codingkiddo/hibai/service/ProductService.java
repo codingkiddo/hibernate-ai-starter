@@ -4,10 +4,9 @@ import com.codingkiddo.hibai.ai.EmbeddingClient;
 import com.codingkiddo.hibai.domain.Product;
 import com.codingkiddo.hibai.repo.ProductRepository;
 import com.codingkiddo.hibai.vector.VectorDao;
+import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 public class ProductService {

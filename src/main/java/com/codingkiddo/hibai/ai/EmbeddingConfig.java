@@ -13,8 +13,7 @@ public class EmbeddingConfig {
             @Value("${hibai.embeddings.model:nomic-embed-text}") String model,
             @Value("${hibai.embeddings.ollama.base-url:http://localhost:11434}") String ollamaBaseUrl,
             @Value("${hibai.embeddings.openai.base-url:https://api.openai.com/v1}") String openaiBaseUrl,
-            @Value("${hibai.embeddings.openai.api-key:}") String openaiApiKey
-    ) {
+            @Value("${hibai.embeddings.openai.api-key:}") String openaiApiKey) {
         if ("openai".equalsIgnoreCase(provider)) {
             return new OpenAIEmbeddingClient(openaiBaseUrl, model, openaiApiKey);
         }
