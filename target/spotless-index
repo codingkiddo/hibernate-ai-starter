@@ -1,0 +1,14 @@
+T6CoIgQ3OswPmDDnjfiBbA2uaZxUNhhLNzFefK2EKz8=
+pom.xml 2025-10-08T13:06:20.218072329Z
+src/main/java/com/codingkiddo/hibai/HibAiApplication.java 2025-10-08T05:57:52Z
+src/main/java/com/codingkiddo/hibai/ai/EmbeddingClient.java 2025-10-08T05:57:52Z
+src/main/java/com/codingkiddo/hibai/ai/EmbeddingConfig.java 2025-10-08T13:06:20.135893580Z
+src/main/java/com/codingkiddo/hibai/ai/OllamaEmbeddingClient.java 2025-10-08T13:06:20.130363972Z
+src/main/java/com/codingkiddo/hibai/ai/OpenAIEmbeddingClient.java 2025-10-08T13:06:20.119679338Z
+src/main/java/com/codingkiddo/hibai/domain/Product.java 2025-10-08T13:06:20.153864150Z
+src/main/java/com/codingkiddo/hibai/repo/ProductRepository.java 2025-10-08T05:57:52Z
+src/main/java/com/codingkiddo/hibai/service/ProductService.java 2025-10-08T13:06:20.144505762Z
+src/main/java/com/codingkiddo/hibai/vector/PgVectorConfig.java 2025-10-08T13:06:20.177463745Z
+src/main/java/com/codingkiddo/hibai/vector/VectorDao.java 2025-10-08T13:06:20.172157636Z
+src/main/java/com/codingkiddo/hibai/web/ProductController.java 2025-10-08T13:06:20.105241466Z
+src/test/java/com/codingkiddo/hibai/IntegrationTest.java 2025-10-08T13:06:20.094405208Z

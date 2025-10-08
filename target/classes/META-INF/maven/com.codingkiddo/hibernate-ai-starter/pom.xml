@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.codingkiddo</groupId>
   <artifactId>hibernate-ai-starter</artifactId>
@@ -56,14 +56,14 @@
       <artifactId>lombok</artifactId>
       <scope>provided</scope>
     </dependency>
-      <dependency>
-  <groupId>org.flywaydb</groupId>
-  <artifactId>flyway-core</artifactId>
-</dependency>
-<dependency>
-  <groupId>org.flywaydb</groupId>
-  <artifactId>flyway-database-postgresql</artifactId>
-</dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-postgresql</artifactId>
+    </dependency>
     <!-- Test stack -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -91,20 +91,49 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.11.0</version>
-  <configuration>
-    <!-- already present -->
-    <annotationProcessorPaths>
-      <path>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.32</version>
-      </path>
-    </annotationProcessorPaths>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <!-- already present -->
+          <annotationProcessorPaths>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>1.18.32</version>
+            </path>
+          </annotationProcessorPaths>
 
-    
-  </configuration>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <pom>
+            <!-- These are the defaults, you can override if you want -->
+            <includes>
+              <include>pom.xml</include>
+            </includes>
+
+            <sortPom/>
+            <!-- has its own section below -->
+          </pom>
+          <java>
+            <googleJavaFormat>
+              <version>1.17.0</version>
+              <style>GOOGLE</style>
+            </googleJavaFormat>
+            <indent>
+              <tabs>true</tabs>
+              <spacesPerTab>2</spacesPerTab>
+            </indent>
+            <indent>
+              <spaces>true</spaces>
+              <spacesPerTab>4</spacesPerTab>
+            </indent>
+          </java>
+        </configuration>
       </plugin>
     </plugins>
   </build>
